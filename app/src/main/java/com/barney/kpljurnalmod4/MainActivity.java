@@ -17,5 +17,16 @@ public class MainActivity extends AppCompatActivity {
         Penjumlahan kerja3 = new Penjumlahan(txt1);
 
         kerja3.JumlahTigaAngka(13.0, 2.0, 20.0);
+
+        TextView darto  = findViewById(R.id.mio);
+
+        SimpleDataBase<Double> perjuangan = new SimpleDataBase(darto);
+
+        perjuangan.AddNewData(12.0);
+        perjuangan.AddNewData(34.0);
+        perjuangan.AddNewData(56.0);
+
+        perjuangan.PrintAllData();
+
     }
 }
